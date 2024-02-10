@@ -1,0 +1,29 @@
+.episodios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.episodio-card {
+  width: 300px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.514);
+  background-color: rgba(128, 128, 128, 0.566);
+}
+
+.episodio-card:hover {
+  background-color: rgba(67, 63, 63, 0.932);
+  color: white;
+  border-color: black;
+}
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
