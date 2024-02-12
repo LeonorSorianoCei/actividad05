@@ -48,7 +48,7 @@ export const Personajes = () => {
     setFiltroSeleccionado(filtro);
   };
 
-  const personajesFiltrados = personajes.filter((personaje) => {
+  const personajesFiltrados = personajes.filter((personaje) => {   //no se usa
     if (filtroSeleccionado === "todos") {
       return true;
     } else if (filtroSeleccionado === "human") {
@@ -71,7 +71,7 @@ export const Personajes = () => {
         <button className="filtros-personajes-btn" onClick={() => handleFiltroClick("alien")}>Alienígenas</button>
       </div>
       <div className="personajes-container">
-        {personajesFiltrados.map(({ id, image, name, status, species, type, gender, origin, location, episode, url, created }) => (
+        {personajes.map(({ id, image, name, status, species, type, gender, origin, location, episode, url, created }) => (
           <div key={id} className="personaje-card">
             <div className="personaje-image">
               <img src={image} alt={name} />
